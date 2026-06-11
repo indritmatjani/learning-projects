@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h3>HOME</h3>
+        <div class="score-board leader">
+          <p id="score-home-display">0</p>
+        </div>
+        <button class="punti" onclick="punto1home()">+1</button>
+        <button class="punti" onclick="punto2home()">+2</button>
+        <button class="punti" onclick="punto3home()">+3</button>
+      </div>
+      <div>
+        <img src="img/LOGO.jpg" width="100px" height="100px" />
+        <button class="newgame" onclick="restart()">NEW GAME</button>
+      </div>
+      <div>
+        <h3>AWAY</h3>
+        <div class="score-board leader">
+          <p id="score-guest-display">0</p>
+        </div>
+        <button class="punti" onclick="punto1guest()">+1</button>
+        <button class="punti" onclick="punto2guest()">+2</button>
+        <button class="punti" onclick="punto3guest()">+3</button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

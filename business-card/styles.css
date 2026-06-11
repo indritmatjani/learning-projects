@@ -1,0 +1,39 @@
+body {
+  margin: 20px;
+  font-family: Trebuchet MS, Geneva, Tahoma, sans-serif;
+}
+
+.avatar {
+  width: 150px;
+}
+
+.card {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  background: #fb8500;
+  color: #003049;
+  border: 6px double #003049;
+}
+.card img {
+  border-radius: 100%;
+}
+
+.card img:hover {
+  transform: scale(0.75) rotate(720deg);
+  transition: transform 3s;
+}
+
+.card p:hover,
+.card h3:hover,
+.card h4:hover {
+  transform: scale(1.5);
+  transition: transform 3s;
+}
+
+.border-blue {
+  border: 1px dotted blue;
+}

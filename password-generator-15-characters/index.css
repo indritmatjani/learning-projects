@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+body {
+  margin: 0;
+  background-color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+}
+
+main {
+  width: 600px;
+  height: 400px;
+  margin: 150px auto 0;
+  background-color: hsl(0, 0%, 69%);
+  padding: 40px;
+  border-radius: 10px;
+  position: relative;
+}
+h1 {
+  color: black;
+}
+span {
+  color: #10b981;
+}
+
+p {
+  color: black;
+}
+
+hr {
+  margin: 25px 0;
+  color: black;
+}
+
+#btn-generate {
+  background-color: #10b981;
+  color: white;
+  border: 2px solid #10b981;
+  border-radius: 5px;
+  padding: 15px 20px;
+  font-size: 1.5em;
+}
+
+.psw-btn {
+  background-color: #273549;
+  color: white;
+  border: 2px solid #273549;
+  border-radius: 5px;
+  padding: 20px 20px;
+  font-size: 1.5em;
+  height: 70px;
+  width: 265px;
+}
+
+#password1 {
+  float: left;
+}
+
+#password2 {
+  float: right;
+}
+
+.psw-btn {
+  cursor: pointer;
+  position: relative;
+}
+
+.psw-btn:hover {
+  background-color: #334155;
+}
+
+#theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+body.dark {
+  background-color: #111827;
+}
+body.dark h1,
+body.dark p {
+  color: white;
+}
+body.dark main {
+  background-color: #111827;
+}
+body.dark .psw-btn {
+  background-color: #353535;
+  border-color: #353535;
+}
+body.dark #btn-generate {
+  background-color: #10b981;
+  border-color: #10b981;
+}
+body.dark main {
+  background-color: #1f2937;
+}

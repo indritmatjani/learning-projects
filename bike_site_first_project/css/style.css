@@ -1,0 +1,447 @@
+@charset "UTF-8";
+
+/* inizio css style */
+/*regole speciali*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/* ad ogni immagine tolgo il bordo */
+img {
+    border: none;
+}
+.clear{
+    clear: both;
+}
+#container{
+  margin: 0 auto;
+  width: 1350px;
+  height: 100%;
+}
+#fascia_menu{
+  height: 625px; 
+  background-image: url(../img/slide.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#menu{
+  display: block;
+  margin: 0 auto;
+  padding-top: 25px;
+  width: 730px;
+  height: 100px;
+}
+#menu a{ 
+  margin-right: 86px;
+}
+#menu a:first-child{
+  margin-left: 20px;
+}
+#menu a:last-child{
+  margin-right: 0;
+}
+.links_menu{
+  text-decoration: none;
+  color: black;
+  margin-top: -10px;
+}
+#fascia_marrone{
+  background-color: #f7f7f7;
+  height: 350px;
+}
+#contenuto_marrone{
+  margin: 0 auto;
+  width: 1300px;
+  height: 100%;
+}
+#fascia_marrone img{
+  position: relative;
+  top: 65px;
+  left: 48.5%;
+}
+#fascia_marrone h2{
+  margin-top: 100px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+#fascia_marrone p{
+  width: 1000px;
+  margin: 15px auto 0;
+  text-align: center;
+  font-size: 15px;
+  font-weight: lighter;
+  color: #898a8c;
+}
+#gallery{
+  height: 450px;
+  margin: 0 auto;
+}
+#box_sinistra{
+  display: block;
+  float: left;
+  background-image: url(../img/fixed.jpg);
+  width: 950px;
+  background-position: center center;
+  height: 100%;
+}
+#box_sinistra img{
+  position: relative;
+  top: 45%;
+  left: 45%;
+}
+#box_destra{
+  display: block;
+  float: right;
+  margin: 0 auto;
+  width: 400px;
+  height: 250px;
+}
+#box_destra img{
+  position: relative;
+  top: 45px;
+  left: 45%;
+}
+#box_destra h2{
+  margin-top: 55px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+}
+#box_destra p{
+  width: 300px;
+  margin: 15px auto 0;
+  text-align: justify;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: lighter;
+  color: #898a8c;
+}
+#box_destra_basso{
+  display: block;
+  float: right;
+  width: 400px;
+  height: 200px;
+}
+#gallery2{
+  height: 450px;
+  margin: 0 auto;
+}
+#box2_destra{
+  display: block;
+  float: right;
+  background-image: url(../img/bici-nera.jpg);
+  width: 900px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+#box2_destra img{
+  position: relative;
+  top: 45%;
+  left: 45%;
+}
+#box2_sinistra{
+  display: block;
+  float: left;
+  margin: 0 auto;
+  width: 450px;
+  height: 250px;
+}
+#box2_sinistra img{
+  position: relative;
+  top: 45px;
+  left: 47%;
+}
+#box2_sinistra h2{
+  margin-top: 55px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+}
+#box2_sinistra p{
+  width: 300px;
+  margin: 15px auto 0;
+  text-align: justify;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: lighter;
+  color: #898a8c;
+}
+#box2_sinistra_basso{
+  display: block;
+  float: left;
+  width: 450px;
+  height: 200px;
+}
+#gallery_basso{
+  height: 450px;
+  margin: 0 auto;
+}
+#basso_sinistra{
+  width: 450px;
+  height: 450px;
+  background-image: url(../img/since-logo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  float: left;
+}
+#basso_sinistra img{
+  position: relative;
+  top: 45%;
+  left: 35%;
+}
+#basso_centrale{
+  display: block;
+  float: left;
+}
+#sopra{
+  height: 300px;
+  width: 450px;
+  background-color: #FFFFFF;
+  display: block;
+}
+#sopra img{
+  position: relative;
+  top: 45px;
+  left: 47%;
+}
+#sopra h2{
+  margin-top: 60px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+}
+#sopra p{
+  width: 300px;
+  margin: 20px auto 0;
+  text-align: justify;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: lighter;
+  color: #898a8c;
+}
+#sotto{
+  width: 450px;
+  height: 150px;
+  background-image: url(../img/ruota-mavic.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+}
+#basso_destra{
+  width: 450px;
+  height: 450px;
+  background-image: url(../img/bici-rossa.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  float: right;
+}
+#fascia_twitter{
+  height: 300px;
+  background: #FFFFFF;
+  margin: 0 auto;
+}
+#testo_normale{
+  font-size: 13px;
+  color: #898a8c;
+  margin-left: 10px;
+}
+#fascia_twitter img{
+  position: relative;
+  top: 50px;
+  left: 48%;
+}
+#fascia_twitter h3{
+  text-align: center;
+  margin-top: 60px;
+}
+#fascia_twitter p{
+  text-align: center;
+  margin-top: 15px;
+  color: #898a8c;
+}
+#immagini{
+  height: 450px;
+  margin: 0 auto;
+}
+#quadro_sinistra, #quadro_centro, #quadro_destra{
+  width: 450px;
+  height: 450px;
+  margin: 0 auto;
+  display: block;
+  float: left;
+}
+#quadro_sinistra1{
+  width: 225px;
+  height: 225px;
+  background-image: url(../img/sella1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  float: left;
+}
+#quadro_sinistra2{
+  width: 225px;
+  height: 225px;
+  background-image: url(../img/selle-colorate.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  float: left;
+}
+#quadro_sinistra3{
+  width: 450px;
+  height: 225px;
+  background-image: url(../img/sella-brooks.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  float: left;
+}
+#quadro_centro1{
+  width: 225px;
+  height: 450px;
+  background-image: url(../img/old-bike.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  float: left;
+}
+#quadro_centro2{
+  width: 225px;
+  height: 450px;
+  background-image: url(../img/bici.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  float: left;
+}
+#quadro_destra1{
+  width: 450px;
+  height: 225px;
+  background-image: url(../img/negozio.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  float: left;
+}
+#quadro_destra2{
+  width: 225px;
+  height: 225px;
+  background-image: url(../img/sella-america.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  float: left;
+}
+#quadro_destra3{
+  width: 225px;
+  height: 225px;
+  background-image: url(../img/borsa.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  float: left;
+}
+#fascia_nera{
+  width: 100%;
+  height: 200px;
+  margin: 0 auto;
+  background-color: black;
+}
+#fascia_nera a{
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid white;
+  display: block;
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-family: Gotham,"Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: relative;
+  top: 40%;
+  left: 39%;
+}
+#fascia_nera a:hover{
+    background-color: white;
+    color: black; 
+}
+#fascia_ricerca{
+  margin: 0 auto;
+  width: 100%;
+  height: 450px;
+}
+#fascia_ricerca img{
+  position: relative;
+  top: 55px;
+  left: 46.5%;
+}
+#fascia_ricerca p{
+  color: #898a8c;
+  margin-top: 70px;
+  text-align: center;
+  font-size: 18px;
+}
+#fascia_ricerca form p{
+  display: block;
+}
+#email{
+  display: block;
+  border: 1px solid #898a8c;
+  width: 300px;
+  height: 50px;
+  position: relative;
+  top: 15%;
+  left: 35%;
+}
+#email span{
+  color: #898a8c;
+  line-height: 50px;
+  margin-left: 15px;
+}
+#fascia_ricerca a{
+  background-color: #64c29e;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid #64c29e;
+  display: block;
+  width: 75px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-family: Gotham,"Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: relative;
+  top: 3%;
+  left: 58%;
+}
+#footer{
+  height: 250px;
+  margin: 0 auto;
+  background-color: #f7f7f7;
+}
+#info{
+  height: 100px;
+  width: 300px;
+  display: block;
+  float: left;
+  margin: 100px 0 0 175px;
+}
+#info p{
+  color: #898a8c;
+}
+#social{
+  height: 100px;
+  width: 200px;
+  display: block;
+  float: left;
+  margin: 115px 0 0 110px;
+}
+#social a{
+  margin-right: 15px;
+}
