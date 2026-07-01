@@ -93,19 +93,20 @@ console.log(sfida.startsWith("30"));
 
 // 22. Usate il metodo endsWith() con la stringa 30 Days Of JavaScript e fate in modo che il risultato sia vero.
 
-console.log(sfida.startsWith("Javascript"));
+console.log(sfida.endsWith("JavaScript"));
 
 // 23. Usare il metodo match() per trovare tutti gli a in 30 Giorni Di JavaScript.
 
-console.log(sfida.match("a"));
+console.log(sfida.match(/a/g));
 
 // 24. Usare il metodo concat() e unire '30 giorni di' e 'JavaScript' in un'unica stringa, '30 giorni di JavaScript'.
 
-let concat = concat("30 giorni di", "JavaScript");
+console.log("30 giorni di ".concat("JavaScript"));
 
 // 25. Usate il metodo repeat() per stampare 30 Giorni Di JavaScript 2 volte.
 
 console.log(sfida.repeat(2));
+
 // Esercizio: Livello 2
 
 // 1. Utilizzando console.log() stampate la seguente dichiarazione:
@@ -113,6 +114,7 @@ console.log(sfida.repeat(2));
 console.log(
   "The quote 'There is no exercise better for the heart than reaching down and lifting people up.' by John Holmes teaches us to help one another.",
 );
+
 // 2. Utilizzando console.log() stampate la seguente citazione di Madre Teresa:
 //    "Love is not patronizing and charity isn't about pity, it is about love. Charity and love are the same -- with charity you give love, so don't just give money but reach out your hand instead."
 
@@ -122,28 +124,37 @@ console.log(
 
 // 3. Verificare se typeof '10' è esattamente uguale a 10. Se non lo è, renderlo esattamente uguale.
 
-let stringaten = "10";
-let ten = 10;
-
-console.log(typeof ten);
-console.log(typeof stringaten);
-if (ten === stringaten) {
-  parseInt(stringaten);
-}
+console.log(typeof "10" === typeof 10); // false: "10" è string, 10 è number
+console.log(typeof Number("10") === typeof 10); // true: entrambi number
 
 // 4. Verificare se parseFloat('9.8') è uguale a 10. In caso contrario, renderlo esattamente uguale a 10.
 
+console.log(parseFloat("9.8") === 10); // false
+console.log(Math.ceil(parseFloat("9.8")) === 10); // true
+
 // 5. Controllare se 'on' si trova sia in python che in jargon.
+
+console.log("python".includes("on"));
+console.log("jargon".includes("on"));
 
 // 6. Spero che questo corso non sia pieno di jargon. Verificate se il gergo è presente nella frase.
 
+let parola = "I hope this course is not full of jargon";
+console.log(parola.includes("jargon"));
+
 // 7. Generare un numero casuale compreso tra 0 e 100.
+console.log(Math.floor(Math.random() * 101));
 
 // 8. Generare un numero casuale compreso tra 50 e 100, incluso.
+console.log(Math.floor(Math.random() * 51) + 50);
 
 // 9. Generare un numero casuale compreso tra 0 e 255 incluso.
+console.log(Math.floor(Math.random() * 256));
 
 // 10. Accedere ai caratteri della stringa 'JavaScript' utilizzando un numero casuale.
+let stringa = "JavaScript";
+let randomIndex = Math.floor(Math.random() * stringa.length);
+console.log(stringa[randomIndex]);
 
 // 11. Usare console.log() e i caratteri di escape per stampare il seguente schema:
 //     1 1 1 1 1
@@ -151,20 +162,59 @@ if (ten === stringaten) {
 //     3 1 3 9 27
 //     4 1 4 16 64
 //     5 1 5 25 125
+console.log(
+  "1 1 1 1 1" +
+    "\n2 1 2 4 8" +
+    "\n3 1 3 9 27" +
+    "\n4 1 4 16 64" +
+    "\n5 1 5 25 125",
+);
 
-// 12. Usa substr per tagliare la frase 'perché perché perché perché' dalla seguente frase:
+// 12. Usa substr per tagliare la frase 'perché perché perché' dalla seguente frase:
 //     'Non si può concludere una frase con perché perché perché è una congiunzione'
+let text_perché =
+  "Non si può concludere una frase con perché perché perché è una congiunzione";
+
+console.log(text_perché.substr(36, 20));
 
 // Esercizio: Livello 3
 
-// 1. "L'amore è la cosa migliore di questo mondo. Alcuni hanno trovato il loro amore e altri lo stanno ancora cercando."
-//    Contate il numero di parole 'amore' in questa frase.
+// 1. Contate il numero di parole 'amore' in questa frase.
+let text_amore =
+  "L'amore è la cosa migliore di questo mondo. Alcuni hanno trovato il loro amore e altri lo stanno ancora cercando.";
+
+console.log(text_amore.match(/amore/g).length);
 
 // 2. Usate match() per contare il numero di tutti i 'perché' nella seguente frase:
-//    "Non si può concludere una frase con perché perché perché è una congiunzione".
+let text_match =
+  "Non si può concludere una frase con perché perché perché è una congiunzione";
 
-// 3. Pulite il testo seguente e trovate la parola più frequente (suggerimento: usate replace ed espressioni regolari).
-//    const sentence = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching'
+console.log(text_match.match(/perché/g).length);
+
+// 3. Pulite il testo seguente e trovate la parola più frequente.
+const sentence =
+  "%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching";
+
+const cleaned = sentence.replace(/[%$@&#;!#?]/g, "").toLowerCase();
+const words = cleaned.split(" ").filter((w) => w !== "");
+const freq = {};
+words.forEach((w) => (freq[w] = (freq[w] || 0) + 1));
+const mostFrequent = Object.keys(freq).reduce((a, b) =>
+  freq[a] > freq[b] ? a : b,
+);
+console.log(
+  "Parola più frequente:",
+  mostFrequent,
+  "— occorrenze:",
+  freq[mostFrequent],
+);
 
 // 4. Calcolare il reddito totale annuo della persona estraendo i numeri dal testo seguente:
 //    'Guadagna 5000 euro di stipendio al mese, 10000 euro di bonus annuale, 15000 euro di corsi online al mese'.
+
+let text =
+  "Guadagna 5000 euro di stipendio al mese, 10000 euro di bonus annuale, 15000 euro di corsi online al mese";
+
+let number = text.match(/\d+/g).map((number) => parseInt(number));
+let total = number[0] * 12 + number[1] + number[2] * 12;
+console.log(total);
